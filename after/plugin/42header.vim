@@ -92,7 +92,7 @@ function! s:line(n)
 endfunction
 
 function! s:user()
-	let l:user = $USER
+	let l:user = $USER_42
 	if exists('g:hdr42user')
 		let l:user = g:hdr42user
 	endif
@@ -103,7 +103,7 @@ function! s:user()
 endfunction
 
 function! s:mail()
-	let l:mail = $MAIL
+	let l:mail = $MAIL_42
 	if exists('g:hdr42mail')
 		let l:mail = g:hdr42mail
 	endif
